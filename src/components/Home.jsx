@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import joblady from '../assets/job-lady.png';
+import devops from '../assets/devops.png';
+import mobiledevelopment from '../assets/mobile_development.png';
+import webdevelopment from '../assets/web_development.png';
+import datascience from '../assets/data_science.png';
 
 
 const Home = () => {
@@ -37,7 +41,7 @@ const Home = () => {
           <p className="daily-users">20k+ daily active users</p>
         </div>
         <div className="hero-right">
-          <img src="\src\assets\job-lady.png" alt="Job Search" />
+          <img src={joblady}  alt="Job Search" />
         </div>
       </section>
 
