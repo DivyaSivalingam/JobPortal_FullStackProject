@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import joblady from '../assets/job-lady.png';
+import devops from '../assets/devops.png';
+import mobiledevelopment from '../assets/mobile_development.png';
+import webdevelopment from '../assets/web_development.png';
+import datascience from '../assets/data_science.png';
 
 
 const Home = () => {
@@ -37,7 +41,7 @@ const Home = () => {
           <p className="daily-users">20k+ daily active users</p>
         </div>
         <div className="hero-right">
-          <img src="\src\assets\job-lady.png" alt="Job Search" />
+          <img src={joblady}  alt="Job Search" />
         </div>
       </section>
 
@@ -60,25 +64,25 @@ const Home = () => {
         </div>
         <div className="category-grid">
           <div className="category-card">
-            <img src="\src\assets\devops.png" alt="Devop Engineer" />
+            <img src={devops} alt="Devop Engineer" />
             <h3>Devops Engineer</h3>
             <p className="jobs-count">6,213 Jobs</p>
             <p>Available in Amazon, Meta, Google, Microsoft, and Apple</p>
           </div>
           <div className="category-card">
-            <img src="\src\assets\web_development.png" alt=" Web Development" />
+            <img src={webdevelopment} alt=" Web Development" />
             <h3>Web Development</h3>
             <p className="jobs-count">3,750 Jobs</p>
             <p>Available in Infosys, Accenture, Cognizant, and Valtech</p>
           </div>
           <div className="category-card">
-            <img src="\src\assets\mobile_development.png" alt="Mobile Development" />
+            <img src={mobiledevelopment} alt="Mobile Development" />
             <h3>Mobile App Development</h3>
             <p className="jobs-count">1,265 Jobs</p>
             <p>Available in ninox,Dot Com Infoway</p>
           </div>
           <div className="category-card">
-            <img src="\src\assets\data_science1.png" alt="Data Science" />
+            <img src={datascience} alt="Data Science" />
             <h3>Data Analysis</h3>
             <p className="jobs-count">5,913 Jobs</p>
             <p>Available in TCS, Infosys, Wipro</p>
