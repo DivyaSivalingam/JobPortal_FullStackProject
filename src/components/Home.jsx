@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import joblady from "\src\assets\job-lady.png" ;
 
 
 const Home = () => {
@@ -37,7 +37,7 @@ const Home = () => {
           <p className="daily-users">20k+ daily active users</p>
         </div>
         <div className="hero-right">
-          <img src="\src\assets\job-lady.png" alt="Job Search" />
+          <img src={joblady}alt="Job Search" />
         </div>
       </section>
 
