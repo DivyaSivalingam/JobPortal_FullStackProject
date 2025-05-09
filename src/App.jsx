@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
@@ -8,6 +8,8 @@ import EmployerDashboard from './components/EmployerDashboard';
 import AdminDashboard from './components/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './context/AuthContext';
+import Footer from './components/Footer';
+import Home from './components/Home';
 import './styles.css';
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignupForm />} />
 
@@ -33,6 +35,7 @@ function App() {
             <Route path="/admin" element={<AdminDashboard />} />
           </Route>
         </Routes>
+        <Footer />
       </div>
     </AuthProvider>
   );

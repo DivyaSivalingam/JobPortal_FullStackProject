@@ -1,21 +1,32 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
+import logo from '../assets/logo_jobportal.png';
+
 
 export default function Navbar() {
   const { user, logout } = useContext(AuthContext);
-  const navigate = useNavigate(); // Changed from useHistory
-  
+  const navigate = useNavigate();
+
   const handleLogout = () => {
-    logout();
-    navigate('/login'); // Changed from history.push
+    logout(); 
+    navigate('/login');
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">JobPortal</Link>
+        <Link to="/" className="logo-link">
+          <img
+            src={logo}
+            alt="JobGenie Logo"
+            className="logo"
+            style={{ height: '60px', marginRight: '10px', verticalAlign: 'middle' }}
+          />
+          <span style={{ verticalAlign: 'middle', fontWeight: 'bold' }}>JobGenie</span>
+        </Link>
       </div>
+
       <div className="navbar-links">
         {user ? (
           <>

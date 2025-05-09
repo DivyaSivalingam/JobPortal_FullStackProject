@@ -9,8 +9,8 @@ const jobs = [
     id: 1,
     title: 'Frontend Developer',
     company: 'Tech Corp',
-    location: 'New York, NY',
-    salary: '$80,000 - $100,000',
+    location: 'Banglore, Karanataka',
+    salary: '80,000 - 1,00,000',
     description: 'We are looking for a skilled Frontend Developer...',
     requirements: '3+ years of React experience...',
     postedDate: '2025-05-01',
@@ -21,7 +21,7 @@ const jobs = [
     title: 'Backend Developer',
     company: 'Data Systems',
     location: 'Remote',
-    salary: '$90,000 - $110,000',
+    salary: '90,000 - 1,10,000',
     description: 'Join our backend team...',
     requirements: 'Node.js, MongoDB, AWS...',
     postedDate: '2025-05-05',
@@ -30,14 +30,59 @@ const jobs = [
   {
     id: 3,
     title: 'UX Designer',
-    company: 'Creative Solutions',
-    location: 'San Francisco, CA',
+    company: 'Mark Technologies',
+    location: 'Chennai, Tamilnadu',
     salary: '$75,000 - $95,000',
     description: 'Looking for a creative UX Designer...',
     requirements: 'Figma, Adobe XD, user research...',
     postedDate: '2025-05-03',
     expiryDate: '2025-07-15'
-  }
+  },
+  {
+    id: 4,
+    title: 'Full Stack Developer',
+    company: 'J and K Solutions',
+    location: 'Hyderabad, Andrapradesh',
+    salary: '$75,000 - $95,000',
+    description: 'Looking for a creative UX Designer...',
+    requirements: 'Figma, Adobe XD, user research...',
+    postedDate: '2025-05-03',
+    expiryDate: '2025-07-15'
+  },
+  {
+    id: 5,
+    title: 'Java Developer',
+    company: 'Stigma Technologies',
+    location: 'Maduri, Tamilnadu',
+    salary: '$75,000 - $95,000',
+    description: 'Looking for a creative UX Designer...',
+    requirements: 'Figma, Adobe XD, user research...',
+    postedDate: '2025-05-03',
+    expiryDate: '2025-07-15'
+  },
+  {
+    id: 6,
+    title: 'Python Developer',
+    company: 'Mick and Mack Private Limited',
+    location: 'Pune, Mumbai',
+    salary: '$75,000 - $95,000',
+    description: 'Looking for a creative UX Designer...',
+    requirements: 'Figma, Adobe XD, user research...',
+    postedDate: '2025-05-03',
+    expiryDate: '2025-07-15'
+  },
+  {
+    id: 7,
+    title: 'Trainee',
+    company: 'CODE Valets',
+    location: 'coimbatore, Tamilnadu',
+    salary: '$75,000 - $95,000',
+    description: 'Looking for a creative UX Designer...',
+    requirements: 'Figma, Adobe XD, user research...',
+    postedDate: '2025-05-03',
+    expiryDate: '2025-07-15'
+  },
+  
 ];
 
 const JobSeekerDashboard = () => {
@@ -48,7 +93,7 @@ const JobSeekerDashboard = () => {
   const [locationFilter, setLocationFilter] = useState('');
   const [savedJobs, setSavedJobs] = useState([1]);
   const [applications, setApplications] = useState([
-    { jobId: 1, status: 'Submitted', appliedDate: '2023-05-20' }
+    { jobId: 1, status: 'Submitted', appliedDate: '2025-05-20' }
   ]);
   const [showEditProfile, setShowEditProfile] = useState(false);
   const [showJobAlerts, setShowJobAlerts] = useState(false);

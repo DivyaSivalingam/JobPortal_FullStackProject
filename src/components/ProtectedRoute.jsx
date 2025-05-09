@@ -6,7 +6,7 @@ const ProtectedRoute = ({ allowedRoles }) => {
   const { user } = useContext(AuthContext);
 
   if (!user || !allowedRoles.includes(user.role)) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return <Outlet />;

@@ -9,7 +9,7 @@ const allUsers = [
     email: 'john@example.com',
     role: 'jobseeker',
     status: 'active',
-    registeredDate: '2023-01-15'
+    registeredDate: '2025-01-15'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const allUsers = [
     role: 'employer',
     status: 'active',
     company: 'Tech Company Inc.',
-    registeredDate: '2023-02-20'
+    registeredDate: '2025-02-20'
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const allUsers = [
     email: 'jane@example.com',
     role: 'jobseeker',
     status: 'blocked',
-    registeredDate: '2023-03-10'
+    registeredDate: '2025-03-10'
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const allUsers = [
     role: 'employer',
     status: 'active',
     company: 'Data Systems',
-    registeredDate: '2023-04-05'
+    registeredDate: '2025-04-05'
   }
 ];
 

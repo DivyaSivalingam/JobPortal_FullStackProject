@@ -14,7 +14,7 @@ const SignupForm = () => {
     experience: ''
   });
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // Replaces useHistory
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
